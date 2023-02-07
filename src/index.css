@@ -1,13 +1,182 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  box-shadow: 0px 5px 15px rgb(155, 149, 149);
+  border-radius: 5px;
+}
+
+.heading{
+  padding: 5px 5px;
+  font-size: 1.5rem;
+}
+
+.inputBox{
+  padding: 2rem 0.8rem;
+  width: 80vw;
+}
+
+input{
+  width: 60vw;
+  height: 5vh;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  background-color: aliceblue;
+}
+
+.submitButton{
+  width: 15vw;
+  height: 5vh;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  background-color: rgb(154, 203, 246);
+  cursor: pointer;
+}
+
+.item{
+  width: 75vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.6rem;
+}
+
+.itemName{
+  text-transform: capitalize;
+  color: rgb(89, 87, 87);
+}
+
+.editButton{
+  color: green;
+  background-color: transparent;
+  padding: 0.4rem 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton{
+  color: red;
+  background-color: transparent;
+  padding: 0.4rem 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.clearButton{
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  background-color: transparent;
+  border: none;
+  color: rgb(223, 70, 70);
+  font-size: medium;
+  cursor: pointer;
+}
+
+.msgBox{
+  width: 80vw;
+  text-align: center;
+  font-size: small;
+}
+
+.msgRed{
+  background-color: rgb(253, 216, 216);
+  color: rgb(186, 70, 70);
+  border-radius: 4px;
+  padding: 0.1rem 0.1rem;
+}
+
+.msgGreen{
+  background-color: rgb(213, 241, 213);
+  color: green;
+  border-radius: 4px;
+  padding: 0.1rem 0.1rem;
+}
+
+.underline{
+  border: 2px solid rgb(35, 156, 249);
+  width: 10vw;
+}
+
+@media only screen and (min-width:1400px)
+{
+  .container{
+    width: 50vw;
+  }
+
+  .inputBox{
+    width: 50vw;
+  }
+  
+  input{
+    width: 39vw;
+  }
+  
+  .submitButton{
+    width: 9vw;
+  }
+
+  .item{
+    width: 50vw;
+  }
+
+  .underline{
+    width: 5vw;
+  }
+  
+  .msgBox{
+    width: 48vw;
+  }
+}
+
+@media only screen and (max-width:600px)
+{
+  .container{
+    width: 70vw;
+  }
+
+  .inputBox{
+    width: 50vw;
+  }
+  
+  input{
+    width: 25vw;
+  }
+  
+  .submitButton{
+    width: 15vw;
+  }
+
+  .item{
+    width: 50vw;
+  }
+
+  .underline{
+    width: 5vw;
+  }
+  
+  .msgBox{
+    width: 48vw;
+  }
 }
